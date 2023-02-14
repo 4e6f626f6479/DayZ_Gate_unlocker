@@ -75,10 +75,10 @@ decoder() {
 			Sleep 250
 
 			thirdgear := 0
-			fourthgear := fourthgear + 1
+			secondgear := secondgear + 1
 		}
 		
-		if(fourthgear > 9) {
+		if(secondgear > 9) {
 	
 			f_press
 			Sleep 250
@@ -93,7 +93,14 @@ decoder() {
 			f_press
 			Sleep 250
 			
-			fourthgear := 0
+			secondgear := 0
+			firstgear := firstgear + 1
+		}
+		
+		if(firstgear > 9) {
+		
+			ExitApp
+	
 		}
 	}
 }
